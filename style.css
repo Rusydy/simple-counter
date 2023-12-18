@@ -1,0 +1,34 @@
+body {
+    background: black;
+    color: darkorange;
+    font-family: arial;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 35px;
+}
+
+#app {
+    background: rgba(255, 156, 0, 0.1);
+    padding: 0 10px 20px 10px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid orange;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background: orange;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+pre {
+    font-size: 15px
+}
+
