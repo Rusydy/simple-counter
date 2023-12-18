@@ -1,19 +1,18 @@
-import van from "https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.2.7.js"
+import van from "https://cdn.jsdelivr.net/gh/vanjs-org/van/public/van-1.2.7.js";
 
-const {
-    button,
-    div,
-    h1,
-} = van.tags
+const { button, div, h1 } = van.tags;
 
-const points = van.state(0)
-const inc = () => ++points.val
+const points = van.state(0);
+
+const inc = () => ++points.val;
+const dec = () => --points.val; // Added decrement function
 
 function App() {
     return div(
         h1("Value: ", points),
-        button({onclick: inc}, "Increment"),
-    )
+        button({ onclick: inc, class: "increment-button" }, "Increment"),
+        button({ onclick: dec, class: "decrement-button" }, "Decrement") // Added decrement button
+    );
 }
 
-van.add(app, App())
+van.add(app, App());

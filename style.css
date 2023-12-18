@@ -32,3 +32,20 @@ pre {
     font-size: 15px
 }
 
+/* Style for Increment Button */
+.increment-button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Style for Decrement Button */
+.decrement-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
